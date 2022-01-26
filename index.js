@@ -80,6 +80,7 @@ const server = http.createServer((req, res) => {
     if (!ext) {
         filePath += '.html'
     }
+    
     fs.readFile(filePath, (err, content) => {
         // если произошла ошибка
         if (err) {
